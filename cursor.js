@@ -30,18 +30,18 @@ a=(ns||n6)?'':'all.';
 n6r=(n6)?'")':'';
 s=(ns)?'':'.style';
 
-if (ns){
-	for (i = 0; i < n; i++)
-		document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
-}
+// if (ns){
+// 	for (i = 0; i < n; i++)
+// 		document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
+// }
 
 if (ie)
 	document.write('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
 
-if (ie||n6){
-	for (i = 0; i < n; i++)
-		document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
-}
+// if (ie||n6){
+// 	for (i = 0; i < n; i++)
+// 		document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
+// }
 
 if (ie)
 	document.write('</div></div>');
