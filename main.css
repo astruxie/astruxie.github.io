@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,700");
+
+/* variables */
+:root {
+
+    --black: rgba(0, 0, 0, 1);
+    --white: rgba(255, 255, 255, 1);
+
+    --font-size-m: 15px;
+    --font-size-l: 32px;
+
+    --font-family-quicksand: "Quicksand";
+}
+
+body {
+    background-color: #48373e;
+}
+
+
+.frame-1 {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    gap: 488px;
+    width: 100%;
+}
+
+.group-2-main-panel {
+
+    align-items: flex-start;
+    display: flex;
+    min-width: 965px;
+    height: 2246px;
+    margin-left: 33px;
+}
+
+.overlap-group {
+
+    align-items: flex-end;
+    background-color: rgba(255, 179, 198, 0.5);
+    width: 961px;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    min-height: 2246px;
+    padding: 44px 168px;
+}
+
+.about-me {
+
+    align-items: center;
+    display: flex;
+    height: 312px;
+    width: 636px;
+    flex-direction: column;
+    gap: 38px;
+}
+
+about-me-1 {
+
+    height: 46px;
+    line-height: normal;
+    letter-spacing: 0;
+    margin-left: -34px;
+    width: 352px;
+    text-align: center;
+}
+
+.valign-text-middle {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lorem-ipsum-dolor-si- {
+
+    color: var(--white);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-family: var(--font-family-frank_ruhl_libre);
+    height: 228px;
+    line-height: normal;
+    letter-spacing: 0;
+    margin-left: -4px;
+    text-align: center;
+    width: 632px;
+}
+
+.place {
+
+    height: 46px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: 159px;
+    margin-top: 507px;
+
+    text-align: center;
+    width: 352px;
+}
+
+.projects-1 {
+
+    height: 46px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: 159px;
+    margin-top: 191px;
+    text-align: center;
+    width: 352px;
+}
+
+.group-1-info-card {
+    align-items: flex-start;
+    margin-left: 3px;
+    margin-top: 222px;
+    min-width: 781px;
+
+    display: flex;
+    height: 292px;
+}
+
+.overlap-group1 {
+    height: 294px;
+
+    margin-top: -2px;
+    position: relative;
+    width: 697px;
+}
+
+.ellipse-1 {
+
+    height: 219px;
+    left: 34px;
+    position: absolute;
+    top: 0;
+    width: 218px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+}
+
+.name {
+
+    color: var(--white);
+    font-weight: 400;
+    left: 284px;
+    top: 55px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    width: 352px;
+
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.rectangle-1 {
+    background-color: rgba(255, 179, 198, 0.5);
+    border-radius: 11px;
+    height: 231px;
+    left: 0;
+    width: 697px;
+    position: absolute;
+    top: 63px;
+}
+
+.icons {
+
+    align-items: flex-start;
+
+    display: flex;
+
+    gap: 7px;
+    height: 35px;
+
+    left: 284px;
+    position: absolute;
+
+    min-width: 168px;
+
+    top: 165px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+
+    cursor: pointer;
+
+    height: 35px;
+
+    object-fit: cover;
+    transition: all 0.3s ease;
+    width: 36px;
+
+    cursor: pointer;
+}
+
+
+
+.nav-bar {
+    align-items: center;
+    display: flex;
+    
+    height: 46px;
+    left: 181px;
+    min-width: 591px;
+    padding: 6.4px 8.2px;
+    position: absolute;
+    top: 215px;
+
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+}
+
+.link{
+    color: #FFFFFF;
+    text-decoration:none;
+}
+
+.link:hover {
+    transform: scale(1.05);
+}
+
+#construction {
+    color: white;
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+
+
+.heart {
+
+    align-self: center;
+    height: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    object-fit: cover;
+    width: 10px;
+}
+
+
+.computer-science-stu {
+
+    color: var(--white);
+
+    font-weight: 700;
+    left: 284px;
+
+    font-family: var(--font-family-frank_ruhl_libre);
+    font-size: var (--font-size-s);
+
+    letter-spacing: 0;
+    line-height: normal;
+
+    position: absolute;
+
+    top: 115px;
+    width: 400px;
+}
