@@ -29,7 +29,14 @@
 
 .subsection {
     align-content: center;
+    min-width: 50%;
+    padding: 20px 20px;
 
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 .title {
@@ -458,5 +465,10 @@ img{
   .pill-button:hover {
     color: white;
     background-color: rgb(88, 49, 60, .5);
+  }
+
+  .cards {
+    display:flex;
+    flex-direction: column;
   }
 
