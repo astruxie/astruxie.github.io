@@ -10,11 +10,50 @@
     --font-size-l: 32px;
 
     --font-family-quicksand: "Quicksand";
+
+    --shift: 0;
+	--x: 0;
+	--y: 0;
+}
+
+.content {
+    justify-content: left;
+}
+
+.section {
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.subsection {
+    align-content: center;
+
+}
+
+.title {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.subtitle {
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin: 0;
+    font-weight: 550;
 }
 
 body {
     background-color: #48373e;
     overflow-x: hidden;
+    font-family: 'Frank Ruhl Libre';
+
 }
 
 
@@ -39,10 +78,11 @@ body {
 }
 
 .overlap-group {
-
-    align-items: flex-end;
+    z-index: 1;
+    color: white;
+    align-items: center;
     background-color: rgba(255, 179, 198, 0.5);
-    width: 961px;
+    width: 50%;
     border-radius: 11px;
     display: flex;
     flex-direction: column;
@@ -227,13 +267,17 @@ about-me-1 {
     color: #FFFFFF;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .link{
     color: #FFFFFF;
     text-decoration:none;
 }
 
 .link:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 #construction {
@@ -276,3 +320,108 @@ about-me-1 {
     top: 115px;
     width: 400px;
 }
+
+
+
+/* image slideshow */
+.container{
+    padding-top: 20px;
+    width: 50vmin;
+    height: 350px; 
+    overflow: hidden;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* Container holding the image and the text */
+.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+  }
+
+  /* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color:#48373e;
+  }
+
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Parallax balls */
+
+
+.parallax-wrap {
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
+.parallax-wrap span {
+	--shift-px: calc(var(--shift) * 1px);
+	--size-big: 90vw;
+	border-radius: 50%;
+	position: absolute;
+	transform: translateX(calc((100vw - var(--x) * var(--shift-px)) / 90))
+		translateY(calc((100vh - var(--y) * var(--shift-px)) / 90));
+	z-index: -5;
+    opacity: 0.5;
+}
+
+
+/* light right */
+.parallax-wrap span:nth-child(1) {
+    height: var(--size-big);
+    width: var(--size-big);
+	--shift: 2;
+	background: #38292f;;
+	left: 60%;
+	top: -20%;
+}
+
+/* dark right */
+.parallax-wrap span:nth-child(2) {
+    height: var(--size-big);
+    width: var(--size-big);
+	--shift: -5;
+	background: #332229;
+	left: 70%;
+	top: 4%;
+}
+
+/* light left */
+.parallax-wrap span:nth-child(3) {
+    height: var(--size-big);
+    width: var(--size-big);
+	--shift: 2;
+	background: #38292f;
+	left: -50%;
+	top: -70%;
+}
+
+/* dark left */
+.parallax-wrap span:nth-child(4) {
+    height: var(--size-big);
+    width: var(--size-big);
+	--shift: -10;
+	background: #332229;
+	left: -80%;
+	top: -70%;
+}
+
+

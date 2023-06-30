@@ -1,79 +1,198 @@
-<link rel="stylesheet" href="main.css">
+<!DOCTYPE html>
+<html>
 
-<script src="cursor.js"></script>
+<head>
+    <title>Sam Noggle</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="main.css">
+    <script src="cursor.js"></script>
+    <!-- <script src="parallax.js"></script> -->
+</head>
 
-<div class="frame-1">
+<body>
 
-    <div class="group-1-info-card">
+    <div class="parallax-wrap">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-        <div class="overlap-group1">
+    <script>
+        document.querySelectorAll(".parallax-wrap").forEach(parallaxWrap =>
+            document.addEventListener("mousemove", ({
+                clientX,
+                clientY
+            }) => {
+                parallaxWrap.style.setProperty("--x", clientX);
+                parallaxWrap.style.setProperty("--y", clientY);
+            }),
+        );
+    </script>
 
-            <div class="rectangle-1"></div>
+    <div class="frame-1">
 
-            <img class="ellipse-1" src="assets/ellipse-1.jpg" alt="Ellipse 1" />
-            <h1 class="name">Samantha J. Noggle</h1>
+        <div class="group-1-info-card">
 
-            <p class="computer-science-stu">Computer Science Student at Millersville University</p>
+            <div class="overlap-group1">
 
-            <div class="nav-bar">
-                <a class="link" href="#construction" >About</a>
-                <img class="heart" src="assets/heart.png" alt="heart" />
-                <a class="link" href="#construction">Projects</a>
-                <img class="heart" src="assets/heart.png" alt="heart" />
-                <a class="link" href="#construction">Research</a>
-                <img class="heart" src="assets/heart.png" alt="heart" />
-                <a class="link" href="#construction">Resume</a>
+                <div class="rectangle-1"></div>
+
+                <img class="ellipse-1" src="assets/portrait.jpg" alt="Ellipse 1" />
+                <h1 class="name">Samantha J. Noggle</h1>
+
+                <p class="computer-science-stu">Software Engineer | Pattax Solutions</p>
+
+                <div class="nav-bar">
+                    <a class="link" href="#about-me">About</a>
+                    <img class="heart" src="assets/heart.png" alt="heart" />
+                    <a class="link" href="#projects">Projects</a>
+                    <img class="heart" src="assets/heart.png" alt="heart" />
+                    <a class="link" href="#research">Research</a>
+                    <img class="heart" src="assets/heart.png" alt="heart" />
+                    <a class="link" href="#construction">Resume</a>
+                </div>
+
+                <div class="icons">
+
+                    <a href="https://www.instagram.com/sam.noggle">
+                        <img class="logo" src="assets/insta-logo.png" alt="instagram" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/samjnoggle/">
+                        <img class="logo" src="assets/linkedin-logo.png" alt="linkedin" />
+                    </a>
+                    <a href="https://github.com/astruxie">
+                        <img class="logo" src="assets/git-logo.png" alt="github" />
+                    </a>
+                    <a href="mailto: sam.noggle@gmail.com">
+                        <img class="logo" src="assets/mail-logo.png" alt="email" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="overlap-group">
+
+            <div class="section" id="about-me">
+
+                <h2 class="title">&nbsp;───────&nbsp;&nbsp;&nbsp;ABOUT ME&nbsp;&nbsp;&nbsp;───────&nbsp;</h2>
+
+                <p class="content" style="font-size: 17px; text-align: center;">
+
+                    Hey, I'm Sam! I'm a software engineer with a bachelor's degree in computer science from Millersville
+                    University.
+                    <br>
+                    During my time at Millersville I co-founded & was president of the <strong>Technology Career
+                        Network</strong> which is a
+                    club focused on computer science students professional development. I was also president of the
+                    <strong>Coding
+                        Club</strong>, participating in various coding competitions.
+                    <br>
+                    I am especially interested in artificial intelligence, cybersecurity, and web development.
+
+                </p>
+                <div class="wrapper">
+                    <div class="container">
+                        <div class=" mySlides img-container">
+                            <img src="assets/pacise.jpg">
+                            <div class="top-right">PACISE 2023</div>
+                        </div>
+                        <div class=" mySlides img-container">
+                            <img src="assets/pacise2.jpg">
+                            <div class="top-right">PACISE 2023</div>
+                        </div>
+                        <div class=" mySlides img-container">
+                            <img src="assets/cposc.jpg">
+                            <div class="top-right">CPOSC 2023</div>
+                        </div>
+                        <div class=" mySlides img-container">
+                            <img src="assets/ccsc.jpg">
+                            <div class="top-right">CCSC Eastern Fall 2022</div>
+                        </div>
+                        <div class=" mySlides img-container">
+                            <img src="assets/icpc.jpg">
+                            <div class="top-right">ICPC Mid Atlantic Regionals 2023</div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <script>
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) { myIndex = 1 }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(carousel, 2000); // Change image every 2 seconds
+                    }
+                </script>
+
+
+
+
             </div>
 
-            <div class="icons">
+            <div class="section" id="projects">
+                <h2 class="title">&nbsp;───────&nbsp;&nbsp;&nbsp;PROJECTS&nbsp;&nbsp;&nbsp;───────&nbsp;</h2>
 
-            <a href="https://www.instagram.com/sam.noggle">
-                <img class="logo" src="assets/insta-logo.png" alt="instagram" />
-            </a>
-            <a href="https://www.linkedin.com/in/samjnoggle/">
-                <img class="logo" src="assets/linkedin-logo.png" alt="linkedin" />
-            </a>
-            <a href="https://github.com/astruxie">
-                <img class="logo" src="assets/git-logo.png" alt="github" />
-            </a>
-            <a href="mailto: sjnoggle@millersville.edu">
-                <img class="logo" src="assets/mail-logo.png" alt="email" />
-            </a>
+                <div class="subsection">
+                    <h3 class="subtitle">Ligma Py UML Editor</h3>
+                    <h4>CSCI 420 Software Engineering | Millersville University</h4>
+                    <p> stuff about it...</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subtitle">WakaBot</h3>
+                    <h4>Personal Project</h4>
+                    <p> stuff about it...</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subtitle">Trash Turtle</h3>
+                    <h4>CSCI 475 Game Development | Millersville University</h4>
+                    <p> stuff about it...</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subtitle">Hopping Home</h3>
+                    <h4>CSCI 475 Game Development | Millersville University</h4>
+                    <p> stuff about it...</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subtitle">Arch Tower Defense</h3>
+                    <h4>CSCI 475 Game Development | Millersville University</h4>
+                    <p> stuff about it...</p>
+                </div>
+
+            </div>
+            <div class="section" id="research">
+
+                <h2 class="title">&nbsp;───────&nbsp;&nbsp;&nbsp;RESEARCH&nbsp;&nbsp;&nbsp;───────&nbsp;</h2>
+
+                <div class="subsection">
+                    <h3 class="subtitle">Machine Learning Techniques to Improve Users' Music Listening Experiences</h3>
+                    <h4> Undergraduate Departmental Honors Thesis | Millersville University</h4>
+                    <p> stuff about it...</p>
+                </div>
+
+
             </div>
 
         </div>
-    </div>
-
-    <div id="construction">
-
-        <h1> NOTHING DOWN HERE YET !!! PLEASE COME BACK LATER XOXO </h1>
 
     </div>
-
-    <div class="group-2-main-panel">
-
     </div>
-    <div class="overlap-group">
-        <div class="about-me">
+</body>
 
-            <div class="about-me-1 valign-text-middle frankruhllibre-bold-white-36px">ABOUT ME</div>
-
-            <p class="lorem-ipsum-dolor-si">
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-
-            </p>
-
-        </div>
-
-        <div class="projects-1 valign-text-middle frankruhllibre-bold-white-36px">PROJECTS</div>
-        <div class="place velign-text-middle frankruhllibre-bold-white-36px">RESEARCH</div>
-
-    </div>
-
-</div>
-</div>
+</html>
