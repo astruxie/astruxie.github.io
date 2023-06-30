@@ -82,12 +82,12 @@ body {
     color: white;
     align-items: center;
     background-color: rgba(255, 179, 198, 0.5);
-    width: 50%;
+    width: 60%;
     border-radius: 11px;
     display: flex;
     flex-direction: column;
     min-height: 2246px;
-    padding: 44px 168px;
+    padding: 40px 160px;
 }
 
 .about-me {
@@ -159,7 +159,7 @@ about-me-1 {
     margin-left: 3px;
     margin-top: 222px;
     min-width: 781px;
-
+    justify-content: space-around;
     display: flex;
     height: 292px;
 }
@@ -228,7 +228,7 @@ about-me-1 {
     top: 165px;
 }
 
-.logo:hover {
+.logo:hover, .logo-small:hover {
     transform: scale(1.1);
 }
 
@@ -241,6 +241,19 @@ about-me-1 {
     object-fit: cover;
     transition: all 0.3s ease;
     width: 36px;
+
+    cursor: pointer;
+}
+
+.logo-small {
+
+    cursor: pointer;
+
+    height: 28px;
+    width: 29px;
+
+    object-fit: cover;
+    transition: all 0.3s ease;
 
     cursor: pointer;
 }
@@ -370,6 +383,7 @@ img{
 	overflow: hidden;
 	position: fixed;
 	width: 100%;
+
 }
 
 .parallax-wrap span {
@@ -424,4 +438,25 @@ img{
 	top: -70%;
 }
 
+.pill-button {
+    background-color: transparent;
+    border: none;
+    color: rgb(75, 41, 50);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    border: 3px solid rgb(88, 49, 60, .5);
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+
+  .pill-button:hover {
+    color: white;
+    background-color: rgb(88, 49, 60, .5);
+  }
 
